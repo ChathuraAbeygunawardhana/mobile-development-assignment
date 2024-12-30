@@ -18,9 +18,9 @@ import { validateUsername, validatePassword, validateConfirmPassword } from '../
 const SignUpScreen = () => {
   const navigation = useNavigation();
   const { setUser } = useContext(UserContext);
-  const [username, setUsername] = useState('Chathura');
-  const [password, setPassword] = useState('Helloworld123@@@');
-  const [confirmPassword, setConfirmPassword] = useState('Helloworld123@@@');
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   const [usernameError, setUsernameError] = useState('');
